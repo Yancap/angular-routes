@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-routes';
+  id = Math.floor(Math.random() * 10);
 }

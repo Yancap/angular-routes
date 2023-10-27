@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { CursosComponent } from './pages/cursos/cursos.component';
 import { DetalhesComponent } from './pages/cursos/detalhes/detalhes.component';
 import { BuscaComponent } from './pages/cursos/busca/busca.component';
+import { CursosRoutingModule } from './pages/cursos/cursos-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BuscaComponent } from './pages/cursos/busca/busca.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    CursosRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -17,10 +17,6 @@ export class DetalhesComponent implements OnInit, OnDestroy{
   ){}
   
   ngOnInit() {
-    this.router.navigate(['login'])
-    this.router.navigate(['/cursos', {
-      query: "busca"
-    }])
     this.subscribe = this.route.params.subscribe((params) => this.id = params['id'])
   }
   ngOnDestroy(){

@@ -10,6 +10,7 @@ import { CursosComponent } from './pages/cursos/cursos.component';
 import { DetalhesComponent } from './pages/cursos/detalhes/detalhes.component';
 import { BuscaComponent } from './pages/cursos/busca/busca.component';
 import { CursosRoutingModule } from './pages/cursos/cursos-routing.module';
+import { AlunosModule } from './components/alunos/alunos.module';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,14 @@ import { CursosRoutingModule } from './pages/cursos/cursos-routing.module';
     HomeComponent,
     CursosComponent,
     DetalhesComponent,
-    BuscaComponent
+    BuscaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    CursosRoutingModule
+    CursosRoutingModule,
+    AlunosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

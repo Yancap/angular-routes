@@ -10,6 +10,8 @@ import { CursosComponent } from './pages/cursos/cursos.component';
 import { DetalhesComponent } from './pages/cursos/detalhes/detalhes.component';
 import { BuscaComponent } from './pages/cursos/busca/busca.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { CursosRoutingModule } from './pages/cursos/cursos-routing.module';
+import { AlunosModule } from './components/alunos/alunos.module';
 // import { CursosRoutingModule } from './pages/cursos/cursos-routing.module';
 
 @NgModule({
@@ -18,13 +20,16 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     LoginComponent,
     HomeComponent,
     BuscaComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    DetalhesComponent,
+    BuscaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    // CursosRoutingModule
+    CursosRoutingModule,
+    AlunosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
